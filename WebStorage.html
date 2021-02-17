@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Storeage</title>
+</head>
+<body>
+    <div id="name">
+
+    </div>
+    <script>
+        /*
+            if(typeof(Storage)!="undefined"){
+                //localStorage item has to be a string.
+            //Store in item
+            localStorage.setItem('name','John doe');
+            //Get item
+        //before console log
+            //localStorage.removeItem('name');
+            console.log(localStorage.getItem('name'));
+            //After console log
+        // localStorage.removeItem('name');
+        if(localStorage.name){
+            document.getElementById('name').innerHTML=localStorage.getItem('name');
+
+        }
+        else{
+            document.getElementById('name').innerHTML='No Name Found!';
+        }
+
+        //console.log(localStorage.name);
+            //Get in browser
+        // document.getElementById('name').innerHTML=localStorage.getItem('name');
+            //Remove an item
+            //localStorage.removeItem('name');
+            }
+            else{
+                console.log(" Sorry Local Storage not Available!")
+            }
+            */
+       
+
+            if(typeof(Storage)!="undefined"){
+                //localStorage item has to be a string.
+            //Store in item
+            sessionStorage.setItem('name','rahul');
+            //Get item
+        //before console log
+            //localStorage.removeItem('name');
+            console.log(sessionStorage.getItem('name'));
+            //After console log
+        // localStorage.removeItem('name');
+        if(sessionStorage.name){
+            document.getElementById('name').innerHTML=sessionStorage.getItem('name');
+
+        }
+        else{
+            document.getElementById('name').innerHTML='No Name Found!';
+        }
+
+        //console.log(localStorage.name);
+            //Get in browser
+        // document.getElementById('name').innerHTML=localStorage.getItem('name');
+            //Remove an item
+            //localStorage.removeItem('name');
+            }
+            else{
+                console.log(" Sorry Session Storage not Available!")
+            }
+    </script>
+</body>
+</html>

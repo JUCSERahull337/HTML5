@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video & Audio</title>
+    <style>
+        button{
+            width: 70px;
+            height: 30px;
+            font-weight: bold;
+        }
+        button:hover{
+            background: yellowgreen;
+        }
+    </style>
+</head>
+<body>
+    <h1>Audio</h1>
+    <audio id="myaudio" src="Barns_Courtney_-_Hellfire(128k).mp3" controls> Audio not Supported</audio>
+    
+    <div>
+        
+        <button onclick ="document.getElementById('myaudio').play()">Play</button>
+        <button onclick ="document.getElementById('myaudio').pause()">Pause</button>
+        <button onclick ="document.getElementById('myaudio').volume+=0.1">+Volume</button>
+        <button onclick ="document.getElementById('myaudio').volume-=0.1">-Volume</button>
+        
+    </div>
+    
+   
+</body>
+</html>
